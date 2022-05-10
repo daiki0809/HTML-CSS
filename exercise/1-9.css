@@ -13,14 +13,14 @@ header {
   width: 960px;
   margin: 0 auto;
   padding: 50px 0;
+  display: flex;
 }
 
 .main-box-item {
   width: 300px;
-  display: inline-block;
   position: relative;
   background-color: #EEEEEE;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .main-box-item:nth-child(3) {
@@ -53,4 +53,21 @@ header {
 footer {
   background-color: #AAAAAA;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-box {
+    width: 100%;
+    display: block;
+  }
+
+  .main-box-item {
+    width: 90%;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* .main-box-item:nth-child(3) {
+    margin-right: auto;
+  } */
+
 }
