@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-box-1 {
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.main-list {
+  padding: 20px;
+  list-style: none;
+  color: gray;
+}
+
+.main-list:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+.main-box-2 {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.main-box-2-box {
+  width: 30%;
+  height: 200px;
+  background-color: yellow;
+  margin-bottom: 40px;
+  margin-right: 5%;
+}
+
+.main-box-2-box:nth-child(3),
+.main-box-2-box:nth-child(6),
+.main-box-2-box:nth-child(9) {
+  margin-right: 0;
+}
+
+.main-box-2-box:nth-child(1),
+.main-box-2-box:nth-child(5),
+.main-box-2-box:nth-child(9) {
+  background-color: orange;
+}
